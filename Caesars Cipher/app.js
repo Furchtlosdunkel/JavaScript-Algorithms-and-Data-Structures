@@ -21,8 +21,7 @@ function caesarCipher(str, shift) {
         let encryptedCharCode = (charCode - base + shift) % 26 + base;
         
         // Şifrelenmiş karakter elde edilir ve şifrelenmiş metne eklenir
-        let encryptedChar = String.fromCharCode(encryptedCharCode);
-        encryptedStr += encryptedChar;
+        encryptedStr += String.fromCharCode(encryptedCharCode);
       } else {
         // Karakter bir harf değilse olduğu gibi şifrelenmiş metne eklenir
         encryptedStr += char;
